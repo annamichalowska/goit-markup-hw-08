@@ -4,19 +4,28 @@
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/background.jpg);
     color: var(--white-color);
-    padding-bottom: 200px;
-    padding-top: 200px;
+    padding-bottom: 118px;
+    padding-top: 118px;
     margin: auto;
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 200px;
+      padding-top: 200px;
+    }
     &__description {
       font-weight: 900;
-      font-size: 44px;
-      line-height: 1.36;
+      font-size: 26px;
+      line-height: 1.62;
       text-align: center;
       letter-spacing: 0.06em;
       text-transform: uppercase;
       padding-bottom: 30px;
       margin: auto;
-      width: 696px;
+      width: 365px;
+      @media screen and (min-width: 1200px) {
+        width: 696px;
+        font-size: 44px;
+        line-height: 1.36;
+      }
     }
     &__btn {
       color: var(--white-color);
@@ -45,39 +54,70 @@
       text-align: center;
     }
   }
-  &-lorem {
+}
+&-lorem {
+  display: block;
+  align-content: center;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  list-style-type: none;
+  @media screen and (min-width: 768px) {
     display: flex;
-    letter-spacing: 0.03em;
-    font-size: 14px;
-    letter-spacing: 0.03em;
-    list-style-type: none;
-    &__background {
-      padding: 25px 0;
-      background-color: var(--team-background-color);
-      display: flex;
-      justify-content: center;
-      align-items: center;
+  }
+  &__background {
+    padding: 25px 0;
+    background-color: var(--team-background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__title {
+    display: block;
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--strong-tekst-color);
+    padding-bottom: 10px;
+    padding-top: 30px;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      text-align: start;
     }
-    &__title {
-      display: block;
-      font-weight: 700;
-      line-height: 1.14;
-      text-transform: uppercase;
-      color: var(--strong-tekst-color);
-      padding-bottom: 10px;
-      padding-top: 30px;
-      &:first-child {
-        margin-left: 0;
-      }
+    &:first-child {
+      margin-left: 0;
     }
-    &__descript {
-      color: var(--mail-phone-color);
-      line-height: 1.71;
+  }
+  &__descript {
+    color: var(--mail-phone-color);
+    line-height: 1.71;
+    padding-bottom: 30px;
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 0;
     }
-    &__margin {
+  }
+  &__margin {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+      width: 354px;
       margin-left: 30px;
       &:nth-child(1) {
         margin-left: 0;
+      }
+      @media screen and (min-width: 1200px) {
+        width: 270px;
+        margin-left: 30px;
+        &:nth-child(1) {
+          margin-left: 0;
+        }
+        // @media screen and (min-width: 768px) {
+        //   margin-left: 30px;
+        //   &:nth-child(1) {
+        //     margin-left: 0;
+        //   }
+        // }
       }
     }
   }
