@@ -6,11 +6,15 @@
   &__items {
     display: block;
     text-align: center;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px 165px;
+    }
     @media screen and (min-width: 1200px) {
       display: flex;
-      justify-content: center;
       text-align: left;
-      gap: 70px;
     }
   }
   &-address {
@@ -74,7 +78,7 @@
   &-icons {
     display: flex;
     justify-content: center;
-    @media and (min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
       width: 206px;
     }
     &__link {
