@@ -231,19 +231,27 @@
   }
   &-clients {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-gap: 30px;
     padding-bottom: 94px;
     &__icon {
       fill: var(--active-icon);
     }
     &__icon-background {
-      width: 170px;
+      width: 210px;
       height: 92px;
       border: 1px solid var(--active-icon);
       border-radius: 4px;
       display: flex;
       justify-content: center;
       align-items: center;
+      @media screen and (min-width: 768px) {
+        width: 226px;
+      }
+      @media screen and (min-width: 1200px) {
+        width: 170px;
+      }
       &:hover,
       &:focus {
         border: 1px solid var(--blue-color);
