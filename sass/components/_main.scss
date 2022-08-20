@@ -186,7 +186,9 @@
     padding-bottom: 94px;
     &__items {
       display: flex;
-      justify-content: space-between;
+      flex-wrap: wrap;
+      justify-content: center;
+      grid-gap: 30px;
     }
     &__block {
       background: var(--white-color);
@@ -195,6 +197,16 @@
         0px 2px 1px var(--team-block-shadow-second);
       border-radius: 0px 0px 4px 4px;
       text-align: center;
+      width: 270px;
+      @media screen and (min-width: 480px) {
+        width: 450px;
+      }
+      @media screen and (min-width: 768px) {
+        width: 354px;
+      }
+      @media screen and (min-width: 1200px) {
+        width: 270px;
+      }
       &:nth-child(4) {
         margin-right: 0;
       }
@@ -249,9 +261,7 @@
 }
 .team-icon {
   display: flex;
-  justify-content: space-between;
-  width: 206px;
-  margin-left: 32px;
+  justify-content: center;
   &__background {
     width: 44px;
     height: 44px;
