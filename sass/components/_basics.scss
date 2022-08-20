@@ -26,8 +26,12 @@ body {
 .section {
   padding-top: 94px;
   &__title {
-    text-align: center;
-    padding-bottom: 50px;
+    display: none;
+    @media screen and (min-width: 1200px) {
+      display: block;
+      text-align: center;
+      padding-bottom: 50px;
+    }
     &--team {
       display: flex;
       justify-content: center;
