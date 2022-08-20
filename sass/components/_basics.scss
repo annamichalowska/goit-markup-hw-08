@@ -24,13 +24,32 @@ body {
   }
 }
 .section {
-  padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  &--lorem {
+    padding-bottom: 0;
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 94px;
+    }
+  }
+  &--profession {
+    display: none;
+    padding-top: 0;
+    padding-bottom: 0;
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
+  }
   &__title {
     display: none;
+    padding-bottom: 50px;
     @media screen and (min-width: 1200px) {
       display: block;
       text-align: center;
-      padding-bottom: 50px;
     }
     &--team {
       display: flex;
@@ -38,4 +57,9 @@ body {
       padding-top: 94px;
     }
   }
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
