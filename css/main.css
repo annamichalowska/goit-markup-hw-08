@@ -98,6 +98,10 @@ body {
   justify-content: center;
   padding-top: 94px;
 }
+.section__title--clients {
+  display: flex;
+  justify-content: center;
+}
 
 img {
   display: block;
@@ -429,20 +433,32 @@ img {
 }
 .index-clients {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  grid-gap: 30px;
   padding-bottom: 94px;
 }
 .index-clients__icon {
   fill: var(--active-icon);
 }
 .index-clients__icon-background {
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid var(--active-icon);
   border-radius: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .index-clients__icon-background {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .index-clients__icon-background {
+    width: 170px;
+  }
 }
 .index-clients__icon-background:hover, .index-clients__icon-background:focus {
   border: 1px solid var(--blue-color);
@@ -485,12 +501,18 @@ img {
 
 .footer {
   color: var(--white-color);
+  text-align: center;
   background-color: var(--footer-background-color);
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 0;
 }
 .footer__items {
-  display: flex;
+  display: block;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .footer__items {
+    display: flex;
+  }
 }
 .footer-address {
   padding-top: 20px;
@@ -535,15 +557,24 @@ img {
   color: white;
 }
 .footer-sections--first {
-  margin-left: 70px;
+  margin-left: 0;
+}
+@media screen and (min-width: 1200px) {
+  .footer-sections--first {
+    margin-left: 70px;
+  }
 }
 .footer-sections--second {
-  margin-left: 78px;
+  margin-left: 0;
+}
+@media screen and (min-width: 1200px) {
+  .footer-sections--second {
+    margin-left: 78px;
+  }
 }
 .footer-icons {
   display: flex;
-  justify-content: space-between;
-  width: 206px;
+  justify-content: center;
 }
 .footer-icons__link {
   fill: var(--white-color);
@@ -554,6 +585,7 @@ img {
 .footer-icons__background {
   width: 44px;
   height: 44px;
+  margin-right: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
