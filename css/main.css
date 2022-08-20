@@ -59,8 +59,14 @@ body {
   padding-top: 94px;
 }
 .section__title {
-  text-align: center;
-  padding-bottom: 50px;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .section__title {
+    display: block;
+    text-align: center;
+    padding-bottom: 50px;
+  }
 }
 .section__title--team {
   display: flex;
@@ -309,8 +315,13 @@ body {
   }
 }
 .index-profession {
-  display: flex;
+  display: none;
   justify-content: space-between;
+}
+@media screen and (min-width: 1200px) {
+  .index-profession {
+    display: flex;
+  }
 }
 .index-profession__block {
   position: relative;
