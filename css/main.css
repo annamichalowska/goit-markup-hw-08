@@ -570,7 +570,17 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-sections {
-  padding-top: 12px;
+  padding-top: 60px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-sections {
+    padding-top: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-sections {
+    padding-top: 12px;
+  }
 }
 .footer-sections__title {
   font-size: 14px;
@@ -585,14 +595,29 @@ img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   padding-left: 16px;
-  padding-right: 150px;
+  padding-right: 158px;
   padding-top: 15px;
   padding-bottom: 15px;
+  font-size: 16px;
   letter-spacing: 0.03em;
   color: white;
 }
+.footer-sections__form {
+  display: block;
+  justify-content: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-sections__form {
+    display: flex;
+  }
+}
 .footer-sections--first {
   margin-left: 0;
+}
+@media screen and (min-width: 768px) and (min-width: 1199px) {
+  .footer-sections--first {
+    padding-top: 5px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-sections--first {
@@ -605,6 +630,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer-sections--second {
     margin-left: 78px;
+    display: inline;
   }
 }
 .footer-icons {
@@ -638,18 +664,27 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-btn {
-  padding: 13px 28px 13px 42px;
-  margin-left: 370px;
+  padding: 10px 28px 10px 42px;
   background: var(--blue-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
   letter-spacing: 0.06em;
+  font-size: 16px;
   color: var(--white-color);
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-btn {
+    margin-left: 12px;
+    margin-top: 0;
+  }
 }
 .footer-btn__icon {
   text-align: center;
