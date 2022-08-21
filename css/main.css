@@ -662,6 +662,11 @@ img {
 }
 
 .portfolio-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  grid-gap: 8px;
+  grid-gap-row: 15px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
@@ -670,6 +675,11 @@ img {
   padding-bottom: 56px;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .portfolio-nav {
+    justify-content: center;
+  }
+}
 .portfolio-nav__btn {
   font-weight: bold;
   background: var(--team-background-color);
@@ -677,8 +687,16 @@ img {
   padding: 6px 20px;
   line-height: 1.625;
   border-radius: 4px;
-  margin-left: 8px;
   cursor: pointer;
+}
+.portfolio-nav__btn--first, .portfolio-nav__btn--fourth {
+  width: 103px;
+}
+.portfolio-nav__btn--second, .portfolio-nav__btn--fifth {
+  width: 128px;
+}
+.portfolio-nav__btn--third {
+  width: 145px;
 }
 .portfolio-nav__btn:nth-child(1) {
   margin-left: 0px;
@@ -686,6 +704,11 @@ img {
 .portfolio-nav__btn a {
   text-decoration: none;
   color: var(--strong-text-color);
+}
+@media screen and (min-width: 768px) {
+  .portfolio-nav__btn {
+    width: auto;
+  }
 }
 .portfolio-nav__btn:focus, .portfolio-nav__btn:hover {
   background-color: var(--blue-color);
