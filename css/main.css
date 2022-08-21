@@ -360,16 +360,20 @@ img {
   grid-gap: 30px;
   letter-spacing: 0.03em;
   font-size: 14px;
-  letter-spacing: 0.03em;
   list-style-type: none;
+  margin: 0;
 }
 .index-lorem__background {
   padding: 25px 0;
-  width: 450px;
   background-color: var(--team-background-color);
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (min-width: 480px) {
+  .index-lorem__background {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 768px) {
   .index-lorem__background {
@@ -386,6 +390,7 @@ img {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: center;
   color: var(--strong-tekst-color);
   padding-bottom: 10px;
   padding-top: 30px;
@@ -393,12 +398,19 @@ img {
 .index-lorem__title:first-child {
   margin-left: 0;
 }
+@media screen and (min-weight: 768px) {
+  .index-lorem__title {
+    text-align: left;
+  }
+}
 .index-lorem__descript {
   color: var(--mail-phone-color);
   line-height: 1.71;
 }
-.index-lorem__margin {
-  width: 450px;
+@media screen and (min-width: 480px) {
+  .index-lorem__margin {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 768px) {
   .index-lorem__margin {
