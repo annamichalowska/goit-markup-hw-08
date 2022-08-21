@@ -17,13 +17,19 @@
     <header class="header">
       <div class="container">
         <div class="header-items">
-          <div class="js-menu-container mob-menu is-open"></div>
-          <button type="button" class="js-open-menu">x</button>
-          <div class="js-close-menu"></div>
           <div>
             <a href="index.html" class="logo logo--header"
               ><span class="logo__part">Web</span>Studio</a
             >
+          </div>
+          <div class="header-mob">
+            <button type="button" class="js-open-menu header-mob__btn">
+              <svg class="header-mob__open-icon">
+                <use xlink:href="images/icons.svg#icon-menu"></use>
+              </svg>
+            </button>
+            <div class="js-menu-container mob-menu is-open"></div>
+            <div class="js-close-menu"></div>
           </div>
           <div>
             <nav class="navigation-header">
