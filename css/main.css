@@ -581,7 +581,6 @@ img {
 .footer-sections__input {
   background-color: var(--footer-background-color);
   box-sizing: border-box;
-  position: absolute;
   border: 1px solid var(--footer-form-border);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -639,7 +638,6 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-btn {
-  position: absolute;
   padding: 13px 28px 13px 42px;
   margin-left: 370px;
   background: var(--blue-color);
