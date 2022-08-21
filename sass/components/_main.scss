@@ -111,15 +111,17 @@
     grid-gap: 30px;
     letter-spacing: 0.03em;
     font-size: 14px;
-    letter-spacing: 0.03em;
     list-style-type: none;
+    margin: 0;
     &__background {
       padding: 25px 0;
-      width: 450px;
       background-color: var(--team-background-color);
       display: flex;
       justify-content: center;
       align-items: center;
+      @media screen and (min-width: 480px) {
+        width: 450px;
+      }
       @media screen and (min-width: 768px) {
         width: 354px;
       }
@@ -132,11 +134,15 @@
       font-weight: 700;
       line-height: 1.14;
       text-transform: uppercase;
+      text-align: center;
       color: var(--strong-tekst-color);
       padding-bottom: 10px;
       padding-top: 30px;
       &:first-child {
         margin-left: 0;
+      }
+      @media screen and (min-weight: 768px) {
+        text-align: left;
       }
     }
     &__descript {
@@ -144,7 +150,9 @@
       line-height: 1.71;
     }
     &__margin {
-      width: 450px;
+      @media screen and (min-width: 480px) {
+        width: 450px;
+      }
       @media screen and (min-width: 768px) {
         width: 354px;
       }
