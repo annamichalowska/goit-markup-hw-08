@@ -36,12 +36,19 @@
     }
   }
   &-items {
-    display: flex;
+    display: grid;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     gap: 30px;
     padding-bottom: 94px;
+    grid-template-columns: auto;
+    @media screen and (min-width: 768px) {
+      grid-template-columns: auto auto;
+    }
+    @media screen and (min-width: 1200px) {
+      grid-template-columns: auto auto auto;
+    }
     &:nth-child(3n) {
       gap: 0;
     }
