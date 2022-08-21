@@ -1,5 +1,10 @@
 .portfolio {
   &-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    grid-gap: 8px;
+    grid-gap-row: 15px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.625;
@@ -7,6 +12,9 @@
     padding-top: 100px;
     padding-bottom: 56px;
     text-align: center;
+    @media screen and (min-width: 768px) {
+      justify-content: center;
+    }
     &__btn {
       font-weight: bold;
       background: var(--team-background-color);
@@ -14,14 +22,27 @@
       padding: 6px 20px;
       line-height: 1.625;
       border-radius: 4px;
-      margin-left: 8px;
       cursor: pointer;
+      &--first,
+      &--fourth {
+        width: 103px;
+      }
+      &--second,
+      &--fifth {
+        width: 128px;
+      }
+      &--third {
+        width: 145px;
+      }
       &:nth-child(1) {
         margin-left: 0px;
       }
       & a {
         text-decoration: none;
         color: var(--strong-text-color);
+      }
+      @media screen and (min-width: 768px) {
+        width: auto;
       }
       &:focus,
       &:hover {
