@@ -54,7 +54,7 @@
           </div>
           <button
             type="button"
-            class="js-open-menu header-mob"
+            class="header-mob js-open-menu"
             aria-expanded="false"
             aria-controls="mobile-menu"
           >
@@ -63,13 +63,6 @@
             </svg>
           </button>
         </div>
-      </div>
-      <div class="js-menu-container mob-menu is-open" id="mobile-menu">
-        <!-- <button type="button" class="header-mob__btn js-close-menu">
-          <svg class="header-mob__close-icon">
-            <use xlink:href="images/icons.svg#icon-close"></use>
-          </svg>
-        </button> -->
       </div>
     </header>
     <main>
@@ -525,6 +518,18 @@
           <button type="submit">Wyślij</button>
         </form>
       </div>
+    </div>
+    <div class="mob-menu js-menu-container" id="mobile-menu">
+      <button type="button" class="header-mob__btn js-close-menu">
+        <svg class="header-mob__close-icon">
+          <use xlink:href="images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu">
+        <li><a href="index.html" class="link">Agencja</a></li>
+        <li><a href="portfolio.html" class="link">Portfolio</a></li>
+        <li><a href="#address" class="link">Kontakt</a></li>
+      </ul>
     </div>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
