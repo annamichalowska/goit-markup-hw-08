@@ -9,6 +9,9 @@
   border-bottom: 1px solid var(--header-line-color);
   &-mob {
     display: flex;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
     @media screen and (min-width: 768px) {
       display: none;
     }
@@ -25,9 +28,6 @@
     }
     &__btn {
       display: flex;
-      margin-left: auto;
-      cursor: pointer;
-      border: none;
     }
   }
   &-items {
@@ -119,4 +119,23 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+.mob-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 250ms, visibility 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    & .modal__block {
+      transform: scale(2);
+    }
+  }
 }
