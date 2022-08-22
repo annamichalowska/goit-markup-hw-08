@@ -52,20 +52,24 @@
               >+48 111 111 111</a
             >
           </div>
-          <div class="header-mob">
-            <button
-              type="button"
-              class="js-open-menu header-mob__btn"
-              js-menu-open
-            >
-              <svg class="header-mob__open-icon">
-                <use xlink:href="images/icons.svg#icon-menu"></use>
-              </svg>
-            </button>
-            <div class="js-menu-container mob-menu is-open"></div>
-            <div class="js-close-menu"></div>
-          </div>
+          <button
+            type="button"
+            class="js-open-menu header-mob"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="header-mob__open-icon">
+              <use xlink:href="images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
         </div>
+      </div>
+      <div class="js-menu-container mob-menu is-open" id="mobile-menu">
+        <!-- <button type="button" class="header-mob__btn js-close-menu">
+          <svg class="header-mob__close-icon">
+            <use xlink:href="images/icons.svg#icon-close"></use>
+          </svg>
+        </button> -->
       </div>
     </header>
     <main>
