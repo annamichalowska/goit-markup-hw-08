@@ -287,8 +287,8 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   padding: 32px;
   background-color: var(--white-color);
   z-index: 999;
@@ -736,7 +736,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .footer-sections {
-    padding-top: 12px;
+    padding-top: 0;
   }
 }
 .footer-sections__title {
@@ -771,7 +771,7 @@ img {
 .footer-sections--first {
   margin-left: 0;
 }
-@media screen and (min-width: 768px) and (min-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-sections--first {
     padding-top: 5px;
   }
@@ -779,6 +779,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer-sections--first {
     margin-left: 70px;
+    padding-top: 12px;
   }
 }
 .footer-sections--second {
@@ -788,6 +789,7 @@ img {
   .footer-sections--second {
     margin-left: 78px;
     display: inline;
+    padding-top: 12px;
   }
 }
 .footer-icons {
@@ -861,13 +863,19 @@ img {
   font-size: 16px;
   line-height: 1.625;
   letter-spacing: 0.03em;
-  padding-top: 100px;
-  padding-bottom: 56px;
   text-align: center;
+  padding-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
   .portfolio-nav {
     justify-content: center;
+    padding-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-nav {
+    justify-content: center;
+    padding-bottom: 50px;
   }
 }
 .portfolio-nav__btn {
@@ -912,7 +920,6 @@ img {
   flex-wrap: wrap;
   align-items: center;
   gap: 30px;
-  padding-bottom: 94px;
   grid-template-columns: auto;
 }
 @media screen and (min-width: 768px) {
