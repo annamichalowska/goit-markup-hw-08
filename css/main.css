@@ -145,6 +145,7 @@ img {
 }
 .header-mob {
   display: flex;
+  margin-left: 276px;
 }
 @media screen and (min-width: 768px) {
   .header-mob {
@@ -170,7 +171,13 @@ img {
 .header-items {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media screen and (min-width: 768px) {
+  .header-items {
+    justify-content: space-between;
+  }
 }
 .header-address {
   display: none;
