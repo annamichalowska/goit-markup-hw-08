@@ -289,7 +289,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 32px;
+  padding: 10px 15px 48px 40px;
   background-color: var(--white-color);
   z-index: 999;
   transform: translateX(100%);
@@ -300,6 +300,7 @@ img {
 }
 .mob-menu__nav {
   list-style: none;
+  padding-top: 38px;
 }
 .mob-menu__nav-items {
   display: flex;
@@ -362,12 +363,6 @@ img {
 }
 .mob-menu.is-open {
   transform: translateX(0);
-}
-.mob-menu .header-mob__btn {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  color: #fff;
 }
 .mob-menu .header-mob__btn {
   position: absolute;
