@@ -930,7 +930,7 @@ img {
   flex-wrap: wrap;
   align-items: center;
   gap: 30px;
-  grid-template-columns: auto;
+  grid-template-columns: 100%;
   justify-content: space-between;
 }
 @media screen and (min-width: 768px) {
@@ -949,8 +949,12 @@ img {
 .portfolio-items__blocks {
   display: block;
   margin-top: 0;
-  width: 354px;
-  height: 100%;
+}
+@media screen and (min-width: 786px) and (max-width: 1190px) {
+  .portfolio-items__blocks {
+    width: 354px;
+    height: 100%;
+  }
 }
 .portfolio-items__blocks:hover {
   box-shadow: 0px 3px 1px var(--light-gray), 0px 1px 2px var(--portfolio-shadow), 0px 2px 2px var(--blocks-shadow-color);
@@ -996,6 +1000,11 @@ img {
   border-bottom: 1px solid var(--portfolio-border-block-color);
   border-right: 1px solid var(--portfolio-border-block-color);
   margin-top: -4px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-figcaption--first {
+    padding-bottom: 55px;
+  }
 }
 .portfolio-figcaption__name {
   font-weight: bold;
