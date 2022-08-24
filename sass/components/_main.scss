@@ -107,7 +107,7 @@
   &-lorem {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     grid-gap: 30px;
     letter-spacing: 0.03em;
     font-size: 14px;
@@ -138,11 +138,11 @@
       color: var(--strong-tekst-color);
       padding-bottom: 10px;
       padding-top: 30px;
+      @media screen and (min-width: 768px) {
+        text-align: left;
+      }
       &:first-child {
         margin-left: 0;
-      }
-      @media screen and (min-weight: 768px) {
-        text-align: left;
       }
     }
     &__descript {
@@ -195,7 +195,7 @@
     &__items {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: space-between;
       grid-gap: 30px;
     }
     &__block {
@@ -240,7 +240,7 @@
   &-clients {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     grid-gap: 30px;
     padding-bottom: 94px;
     &__icon {
