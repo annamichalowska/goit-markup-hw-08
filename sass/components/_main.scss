@@ -242,7 +242,9 @@
     flex-wrap: wrap;
     justify-content: space-between;
     grid-gap: 30px;
-    padding-bottom: 94px;
+    @media screen and (max-width: 480px) {
+      justify-content: center;
+    }
     &__icon {
       fill: var(--active-icon);
     }
