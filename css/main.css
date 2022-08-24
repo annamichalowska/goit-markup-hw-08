@@ -577,6 +577,11 @@ img {
   justify-content: space-between;
   grid-gap: 30px;
 }
+@media screen and (max-width: 480px) {
+  .index-team__items {
+    justify-content: center;
+  }
+}
 .index-team__block {
   background: var(--white-color);
   box-shadow: 0px 1px 3px var(--blocks-shadow-color), 0px 1px 1px var(--team-block-shadow-first), 0px 2px 1px var(--team-block-shadow-second);
