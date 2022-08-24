@@ -65,7 +65,7 @@
     flex-wrap: wrap;
     align-items: center;
     gap: 30px;
-    grid-template-columns: auto;
+    grid-template-columns: 100%;
     justify-content: space-between;
     @media screen and (min-width: 768px) {
       grid-template-columns: auto auto;
@@ -79,8 +79,10 @@
     &__blocks {
       display: block;
       margin-top: 0;
-      width: 354px;
-      height: 100%;
+      @media screen and (min-width: 786px) and (max-width: 1190px) {
+        width: 354px;
+        height: 100%;
+      }
       &:hover {
         box-shadow: 0px 3px 1px var(--light-gray),
           0px 1px 2px var(--portfolio-shadow),
@@ -129,6 +131,11 @@
     border-bottom: 1px solid var(--portfolio-border-block-color);
     border-right: 1px solid var(--portfolio-border-block-color);
     margin-top: -4px;
+    &--first {
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+        padding-bottom: 55px;
+      }
+    }
     &__name {
       font-weight: bold;
       font-weight: 700;
