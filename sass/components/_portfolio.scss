@@ -66,9 +66,9 @@
     align-items: center;
     gap: 30px;
     grid-template-columns: auto;
+    justify-content: space-between;
     @media screen and (min-width: 768px) {
       grid-template-columns: auto auto;
-      justify-content: space-between;
     }
     @media screen and (min-width: 1200px) {
       grid-template-columns: auto auto auto;
