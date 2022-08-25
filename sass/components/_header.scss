@@ -65,6 +65,11 @@
     align-items: center;
     padding-top: 16px;
     padding-bottom: 16px;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
   }
 
   &-address {
@@ -191,6 +196,11 @@
       letter-spacing: 0.02em;
       padding-bottom: 32px;
 
+      &::after {
+        content: "";
+        color: $blueColor;
+      }
+
       &:focus,
       &:hover {
         color: $blueColor;
@@ -201,7 +211,6 @@
   &__address {
     display: flex;
     flex-direction: column;
-    padding-top: 250px;
   }
 
   &__phone {
