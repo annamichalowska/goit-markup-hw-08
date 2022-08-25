@@ -4,8 +4,6 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  padding-top: 24px;
-  padding-bottom: 25px;
   border-bottom: 1px solid var(--header-line-color);
   &-mob {
     display: flex;
@@ -113,6 +111,8 @@
     color: var(--strong-text-color);
     text-decoration: none;
     position: relative;
+    padding-top: 32px;
+    padding-bottom: 32px;
     &:first-child {
       margin-left: 0;
     }
@@ -132,7 +132,7 @@
       width: 100%;
       height: 4px;
       border-radius: 2px;
-      top: 48px;
+      bottom: -1px;
     }
   }
 }
