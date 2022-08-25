@@ -6,12 +6,12 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   &__part {
-    color: var(--blue-color);
+    color: $blueColor;
   }
   &--header {
-    color: var(--black-color);
+    color: $blackColor;
   }
   &--footer {
-    color: var(--white-color);
+    color: $whiteColor;
   }
 }
