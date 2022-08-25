@@ -4,8 +4,8 @@
 }
 body {
   font-family: $mainFont, $secondaryFont, sans-serif;
-  color: var(--black-color);
-  background-color: var(--white-color);
+  color: $blackColor;
+  background-color: $whiteColor;
 }
 .container {
   width: 100%;
