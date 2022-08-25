@@ -11,6 +11,7 @@
     letter-spacing: 0.03em;
     text-align: center;
     padding-bottom: 40px;
+
     @media screen and (min-width: 768px) {
       justify-content: center;
       padding-bottom: 30px;
@@ -19,6 +20,7 @@
       justify-content: center;
       padding-bottom: 50px;
     }
+
     &__btn {
       font-weight: bold;
       background: $teamBackgroundColor;
@@ -27,27 +29,34 @@
       line-height: 1.625;
       border-radius: 4px;
       cursor: pointer;
+
       &--first,
       &--fourth {
         width: 103px;
       }
+
       &--second,
       &--fifth {
         width: 128px;
       }
+
       &--third {
         width: 145px;
       }
+
       &:nth-child(1) {
         margin-left: 0px;
       }
+
       & a {
         text-decoration: none;
         color: $strongTextColor;
       }
+
       @media screen and (min-width: 768px) {
         width: auto;
       }
+
       &:focus,
       &:hover {
         background-color: $blueColor;
@@ -59,6 +68,7 @@
       }
     }
   }
+
   &-items {
     display: grid;
     flex-wrap: wrap;
@@ -66,41 +76,50 @@
     gap: 30px;
     grid-template-columns: 100%;
     justify-content: space-between;
+
     @media screen and (min-width: 768px) {
       grid-template-columns: auto auto;
     }
     @media screen and (min-width: 1200px) {
       grid-template-columns: auto auto auto;
     }
+
     &:nth-child(3n) {
       gap: 0;
     }
+
     &__blocks {
       display: block;
       margin-top: 0;
+
       @media screen and (min-width: 786px) and (max-width: 1190px) {
         width: 354px;
         height: 100%;
       }
+
       &:hover {
         box-shadow: 0px 3px 1px $lightGray, 0px 1px 2px $portfolioShadow,
           0px 2px 2px $blocksShadowColor;
         cursor: pointer;
         transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
       }
+
       &:hover .portfolio-animation {
         transform: translateY(0);
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
       }
     }
+
     &__img {
       position: relative;
       overflow: hidden;
+
       & img {
         display: block;
       }
     }
   }
+
   &-animation {
     position: absolute;
     display: inline-block;
@@ -112,6 +131,7 @@
     background-color: rgba(33, 150, 243, 0.9);
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     &__descript {
       position: absolute;
       top: 0;
@@ -122,6 +142,7 @@
       color: $whiteColor;
     }
   }
+
   &-figcaption {
     list-style-type: none;
     padding: 20px 24px 20px 24px;
@@ -129,11 +150,13 @@
     border-bottom: 1px solid $portfolioBorderBlockColor;
     border-right: 1px solid $portfolioBorderBlockColor;
     margin-top: -4px;
+
     &--first {
       @media screen and (min-width: 768px) and (max-width: 1199px) {
         padding-bottom: 55px;
       }
     }
+
     &__name {
       font-weight: bold;
       font-weight: 700;
@@ -142,6 +165,7 @@
       color: $strongTextColor;
       line-height: 2;
     }
+
     &__descript {
       font-size: 16px;
       letter-spacing: 0.03em;
