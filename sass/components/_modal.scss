@@ -3,6 +3,7 @@
   visibility: hidden;
   pointer-events: none;
 }
+
 .modal {
   position: fixed;
   top: 0;
@@ -14,14 +15,17 @@
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 250ms, visibility 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
   &.is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+
     & .modal__block {
       transform: scale(2);
     }
   }
+
   &__block {
     position: relative;
     top: 50%;
@@ -32,10 +36,12 @@
     background-color: $whiteColor;
     border-radius: 4px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     @media screen and (min-width: 1200px) {
       width: 528px;
     }
   }
+
   &__close-btn {
     position: absolute;
     top: 8px;
@@ -46,6 +52,7 @@
     border: 1px solid $lightGray;
     border-radius: 50%;
     cursor: pointer;
+
     &:hover,
     &:focus {
       cursor: pointer;
@@ -54,16 +61,19 @@
       transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
+
     &:hover .modal__close-icon,
     &:focus .modal__close-icon {
       fill: $whiteColor;
     }
   }
+
   &__close-icon {
     fill: $blackColor;
     width: 11px;
     height: 11px;
   }
+
   &__description {
     font-weight: 700;
     font-size: 20px;
@@ -73,9 +83,11 @@
     color: $strongTextColor;
     padding-bottom: 12px;
   }
+
   &__form {
     display: flex;
     flex-direction: column;
+
     & button {
       display: flex;
       justify-content: center;
@@ -90,6 +102,7 @@
       letter-spacing: 0.06em;
       color: $whiteColor;
       cursor: pointer;
+
       &:focus,
       &:hover {
         background: $modalBtnActive;
@@ -97,6 +110,7 @@
       }
     }
   }
+
   &-blocks {
     position: relative;
     display: flex;
@@ -106,12 +120,15 @@
     letter-spacing: 0.01em;
     color: $mailPhoneColor;
     padding-bottom: 10px;
+
     &:nth-child(4) {
       padding-bottom: 0;
     }
+
     &__descript {
       padding-bottom: 4px;
     }
+
     &__input {
       width: 100%;
       padding-top: 12px;
@@ -120,18 +137,21 @@
       border-radius: 4px;
       box-sizing: border-box;
       padding-left: 42px;
+
       &:hover,
       &:focus {
         outline: none;
         border-color: $blueColor;
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
       }
+
       &:hover ~ .modal-blocks__icons,
       &:focus ~ .modal-blocks__icons {
         fill: $blueColor;
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
       }
     }
+
     &__icons {
       position: absolute;
       top: 50%;
@@ -139,6 +159,7 @@
       display: inline-block;
       fill: $strongTextColor;
     }
+
     &__textarea {
       width: 100%;
       height: 120px;
@@ -148,9 +169,11 @@
       padding-top: 12px;
       padding-left: 16px;
       padding-right: 16px;
+
       &::placeholder {
         color: rgba(117, 117, 117, 0.5);
       }
+
       &:focus,
       &:hover {
         outline: none;
@@ -159,11 +182,13 @@
       }
     }
   }
+
   &-accept {
     display: flex;
     align-items: center;
     padding-bottom: 30px;
     padding-top: 20px;
+
     &__square {
       width: 16px;
       height: 16px;
@@ -171,12 +196,14 @@
       border: 2px solid $strongTextColor;
       border-radius: 3px;
       margin-right: 8px;
+
       &:hover,
       &:focus {
         border-color: $blueColor;
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
       }
     }
+
     &__checkbox {
       position: absolute;
       z-index: 200;
@@ -186,11 +213,13 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+
       &:checked + .modal-accept__icon {
         background-color: $blueColor;
         border: none;
       }
     }
+
     &__icon {
       border-radius: 3px;
       width: 16px;
@@ -203,11 +232,13 @@
       fill: $activeIcon;
       position: absolute;
     }
+
     &__text {
       font-size: 14px;
       line-height: 1.17143;
       letter-spacing: 0.03em;
       color: $mailPhoneColor;
+
       & a {
         color: $blueColor;
         margin-left: 0;
