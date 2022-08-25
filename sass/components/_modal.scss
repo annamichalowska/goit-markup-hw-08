@@ -29,7 +29,7 @@
     width: 100%;
     padding: 40px;
     transform: translate(-50%, -50%);
-    background-color: var(--white-color);
+    background-color: $whiteColor;
     border-radius: 4px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     @media screen and (min-width: 1200px) {
@@ -42,25 +42,25 @@
     right: 8px;
     width: 30px;
     height: 30px;
-    background-color: var(--white-color);
-    border: 1px solid var(--light-gray);
+    background-color: $whiteColor;
+    border: 1px solid $lightGray;
     border-radius: 50%;
     cursor: pointer;
     &:hover,
     &:focus {
       cursor: pointer;
-      background-color: var(--blue-color);
-      color: var(--white-color);
+      background-color: $blueColor;
+      color: $whiteColor;
       transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     &:hover .modal__close-icon,
     &:focus .modal__close-icon {
-      fill: var(--white-color);
+      fill: $whiteColor;
     }
   }
   &__close-icon {
-    fill: var(--black-color);
+    fill: $blackColor;
     width: 11px;
     height: 11px;
   }
@@ -70,7 +70,7 @@
     text-align: center;
     line-height: 1.15;
     letter-spacing: 0.03em;
-    color: var(--strong-text-color);
+    color: $strongTextColor;
     padding-bottom: 12px;
   }
   &__form {
@@ -81,18 +81,18 @@
       justify-content: center;
       margin: auto;
       padding: 10px 76px;
-      background: var(--blue-color);
+      background: $blueColor;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
       border-radius: 4px;
       border: none;
       font-weight: 700;
       line-height: 1.875;
       letter-spacing: 0.06em;
-      color: var(--white-color);
+      color: $whiteColor;
       cursor: pointer;
       &:focus,
       &:hover {
-        background: var(--modal-btn-active);
+        background: $modalBtnActive;
         transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
       }
     }
@@ -104,7 +104,7 @@
     font-size: 12px;
     line-height: 1.17167;
     letter-spacing: 0.01em;
-    color: var(--mail-phone-color);
+    color: $mailPhoneColor;
     padding-bottom: 10px;
     &:nth-child(4) {
       padding-bottom: 0;
@@ -116,19 +116,19 @@
       width: 100%;
       padding-top: 12px;
       padding-bottom: 12px;
-      border: 1px solid var(--modal-input-color);
+      border: 1px solid $modalInputColor;
       border-radius: 4px;
       box-sizing: border-box;
       padding-left: 42px;
       &:hover,
       &:focus {
         outline: none;
-        border-color: var(--blue-color);
+        border-color: $blueColor;
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
       }
       &:hover ~ .modal-blocks__icons,
       &:focus ~ .modal-blocks__icons {
-        fill: var(--blue-color);
+        fill: $blueColor;
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
       }
     }
@@ -137,12 +137,12 @@
       top: 50%;
       left: 15px;
       display: inline-block;
-      fill: var(--strong-text-color);
+      fill: $strongTextColor;
     }
     &__textarea {
       width: 100%;
       height: 120px;
-      border: 1px solid var(--modal-input-color);
+      border: 1px solid $modalInputColor;
       border-radius: 4px;
       box-sizing: border-box;
       padding-top: 12px;
@@ -154,7 +154,7 @@
       &:focus,
       &:hover {
         outline: none;
-        border-color: var(--blue-color);
+        border-color: $blueColor;
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
       }
     }
@@ -166,14 +166,14 @@
     padding-top: 20px;
     &__square {
       width: 16px;
-      height: 15px;
+      height: 16px;
       position: relative;
-      border: 2px solid var(--strong-text-color);
+      border: 2px solid $strongTextColor;
       border-radius: 3px;
       margin-right: 8px;
       &:hover,
       &:focus {
-        border-color: var(--blue-color);
+        border-color: $blueColor;
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
       }
     }
@@ -187,29 +187,29 @@
       left: 50%;
       transform: translate(-50%, -50%);
       &:checked + .modal-accept__icon {
-        background-color: var(--blue-color);
+        background-color: $blueColor;
         border: none;
       }
     }
     &__icon {
       border-radius: 3px;
-      width: 17px;
-      height: 17px;
-      padding: 4px;
+      width: 16px;
+      height: 16px;
+      padding: 2px;
       z-index: 102;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      fill: var(--active-icon);
+      fill: $activeIcon;
       position: absolute;
     }
     &__text {
       font-size: 14px;
       line-height: 1.17143;
       letter-spacing: 0.03em;
-      color: var(--mail-phone-color);
+      color: $mailPhoneColor;
       & a {
-        color: var(--blue-color);
+        color: $blueColor;
         margin-left: 0;
       }
     }
