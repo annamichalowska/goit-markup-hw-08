@@ -1,4 +1,5 @@
 .index {
+  
   &-front {
     background-color: $footerBackgroundColor;
     background-image: linear-gradient(
@@ -19,6 +20,7 @@
     height: 400px;
     text-align: center;
     max-width: 768px;
+   
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
@@ -29,10 +31,12 @@
         ),
         url(../images/bg-mobile2x.jpg);
     }
+
     @media screen and (min-width: 768px) {
       background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/bg-tablet.jpg);
       max-width: 1200px;
+      
       @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
@@ -44,12 +48,14 @@
           url(../images/bg-tablet2x.jpg);
       }
     }
+
     @media screen and (min-width: 1200px) {
       background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/bg-desktop.jpg);
       padding-top: 200px;
       max-width: 1600px;
       height: 600px;
+      
       @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
@@ -61,6 +67,7 @@
           url(../images/bg-desktop2x.jpg);
       }
     }
+
     &__description {
       font-weight: 900;
       font-size: 26px;
@@ -71,12 +78,14 @@
       padding-bottom: 30px;
       margin: auto;
       width: 365px;
+     
       @media screen and (min-width: 1200px) {
         font-size: 44px;
         line-height: 1.36;
         width: 696px;
       }
     }
+
     &__btn {
       color: $whiteColor;
       background-color: $blueColor;
@@ -90,6 +99,7 @@
       text-decoration: none;
       cursor: pointer;
       border: none;
+      
       &:hover,
       &:focus {
         color: $blueColor;
@@ -98,12 +108,14 @@
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
       }
     }
+
     & .container {
       margin: auto;
       display: block;
       text-align: center;
     }
   }
+
   &-lorem {
     display: flex;
     flex-wrap: wrap;
@@ -113,12 +125,14 @@
     font-size: 14px;
     list-style-type: none;
     margin: 0;
+    
     &__background {
       padding: 25px 0;
       background-color: $teamBackgroundColor;
       display: flex;
       justify-content: center;
       align-items: center;
+      
       @media screen and (min-width: 480px) {
         width: 450px;
       }
@@ -129,6 +143,7 @@
         width: 270px;
       }
     }
+
     &__title {
       display: block;
       font-weight: 700;
@@ -138,17 +153,21 @@
       color: var(--strong-tekst-color);
       padding-bottom: 10px;
       padding-top: 30px;
+      
       @media screen and (min-width: 768px) {
         text-align: left;
       }
+      
       &:first-child {
         margin-left: 0;
       }
     }
+
     &__descript {
       color: $mailPhoneColor;
       line-height: 1.71;
     }
+    
     &__margin {
       @media screen and (min-width: 480px) {
         width: 450px;
@@ -161,17 +180,21 @@
       }
     }
   }
+
   &-profession {
     display: none;
     justify-content: space-between;
+    
     @media screen and (min-width: 1200px) {
       display: flex;
     }
+
     &__block {
       position: relative;
       width: 370px;
       height: 294px;
     }
+
     &__name {
       position: absolute;
       width: 370px;
@@ -189,18 +212,22 @@
       background: $professionNameBackground;
     }
   }
+
   &-team {
     background-color: $teamBackgroundColor;
     padding-bottom: 94px;
+   
     &__items {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       grid-gap: 30px;
+      
       @media screen and (max-width: 480px) {
         justify-content: center;
       }
     }
+
     &__block {
       background: $whiteColor;
       box-shadow: 0px 1px 3px $blocksShadowColor,
@@ -209,6 +236,7 @@
       border-radius: 0px 0px 4px 4px;
       text-align: center;
       width: 270px;
+      
       @media screen and (min-width: 480px) {
         width: 450px;
       }
@@ -218,10 +246,12 @@
       @media screen and (min-width: 1200px) {
         width: 270px;
       }
+      
       &:nth-child(4) {
         margin-right: 0;
       }
     }
+
     &__name {
       padding-top: 30px;
       font-weight: 500;
@@ -230,6 +260,7 @@
       color: $strongTextColor;
       padding-bottom: 30px;
     }
+
     &__profession {
       font-size: 16px;
       line-height: 1.1875;
@@ -240,17 +271,21 @@
       padding-bottom: 16px;
     }
   }
+
   &-clients {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     grid-gap: 30px;
+    
     @media screen and (max-width: 480px) {
       justify-content: center;
     }
+
     &__icon {
       fill: $activeIcon;
     }
+
     &__icon-background {
       width: 210px;
       height: 92px;
@@ -259,18 +294,21 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      
       @media screen and (min-width: 768px) {
         width: 226px;
       }
       @media screen and (min-width: 1200px) {
         width: 170px;
       }
+
       &:hover,
       &:focus {
         border: 1px solid $blueColor;
         cursor: pointer;
         transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
       }
+
       &:hover .index-clients__icon,
       &:focus .index-clients__icon {
         fill: $blueColor;
@@ -280,9 +318,11 @@
     }
   }
 }
+
 .team-icon {
   display: flex;
   justify-content: center;
+  
   &__background {
     width: 44px;
     height: 44px;
@@ -290,12 +330,14 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    
     &:hover,
     &:focus {
       background-color: $blueColor;
       cursor: pointer;
       transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
+
     &:hover .team-icon__link,
     &:focus .team-icon__link {
       fill: $whiteColor;
@@ -303,6 +345,7 @@
       transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
+  
   &__link {
     fill: $activeIcon;
     width: 20px;
