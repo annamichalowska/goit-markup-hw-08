@@ -1,13 +1,13 @@
 .index {
   &-front {
-    background-color: var(--footer-background-color);
+    background-color: $footerBackgroundColor;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/bg-mobile.jpg);
-    color: var(--white-color);
+    color: $whiteColor;
     padding-bottom: 0px;
     padding-top: 118px;
     margin-left: auto;
@@ -78,9 +78,9 @@
       }
     }
     &__btn {
-      color: var(--white-color);
-      background-color: var(--blue-color);
-      box-shadow: 0px 4px 4px var(--front-btn-shadow);
+      color: $whiteColor;
+      background-color: $blueColor;
+      box-shadow: 0px 4px 4px $frontBtnShadow;
       border-radius: 4px;
       padding: 10px 41px 10px 42px;
       font-weight: 700;
@@ -92,8 +92,8 @@
       border: none;
       &:hover,
       &:focus {
-        color: var(--blue-color);
-        background-color: var(--white-color);
+        color: $blueColor;
+        background-color: $whiteColor;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
       }
@@ -115,7 +115,7 @@
     margin: 0;
     &__background {
       padding: 25px 0;
-      background-color: var(--team-background-color);
+      background-color: $teamBackgroundColor;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -146,7 +146,7 @@
       }
     }
     &__descript {
-      color: var(--mail-phone-color);
+      color: $mailPhoneColor;
       line-height: 1.71;
     }
     &__margin {
@@ -179,18 +179,18 @@
       top: 224px;
       text-transform: uppercase;
       z-index: 1;
-      color: var(--white-color);
+      color: $whiteColor;
       padding-top: 27px;
       font-weight: 700;
       font-size: 14px;
       line-height: 16px;
       letter-spacing: 0.03em;
       text-align: center;
-      background: var(--profession-name-background);
+      background: $professionNameBackground;
     }
   }
   &-team {
-    background-color: var(--team-background-color);
+    background-color: $teamBackgroundColor;
     padding-bottom: 94px;
     &__items {
       display: flex;
@@ -202,10 +202,10 @@
       }
     }
     &__block {
-      background: var(--white-color);
-      box-shadow: 0px 1px 3px var(--blocks-shadow-color),
-        0px 1px 1px var(--team-block-shadow-first),
-        0px 2px 1px var(--team-block-shadow-second);
+      background: $whiteColor;
+      box-shadow: 0px 1px 3px $blocksShadowColor,
+        0px 1px 1px $teamBlockShadowFirst,
+        0px 2px 1px $teamBlockShadowSecond;
       border-radius: 0px 0px 4px 4px;
       text-align: center;
       width: 270px;
@@ -227,7 +227,7 @@
       font-weight: 500;
       font-size: 16px;
       letter-spacing: 0.03em;
-      color: var(--strong-text-color);
+      color: $strongTextColor;
       padding-bottom: 30px;
     }
     &__profession {
@@ -235,7 +235,7 @@
       line-height: 1.1875;
       text-align: center;
       letter-spacing: 0.03em;
-      color: var(--mail-phone-color);
+      color: $mailPhoneColor;
       padding-top: 10px;
       padding-bottom: 16px;
     }
@@ -249,12 +249,12 @@
       justify-content: center;
     }
     &__icon {
-      fill: var(--active-icon);
+      fill: $activeIcon;
     }
     &__icon-background {
       width: 210px;
       height: 92px;
-      border: 1px solid var(--active-icon);
+      border: 1px solid $activeIcon;
       border-radius: 4px;
       display: flex;
       justify-content: center;
@@ -267,13 +267,13 @@
       }
       &:hover,
       &:focus {
-        border: 1px solid var(--blue-color);
+        border: 1px solid $blueColor;
         cursor: pointer;
         transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
       }
       &:hover .index-clients__icon,
       &:focus .index-clients__icon {
-        fill: var(--blue-color);
+        fill: $blueColor;
         cursor: pointer;
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
       }
@@ -292,19 +292,19 @@
     border-radius: 50%;
     &:hover,
     &:focus {
-      background-color: var(--blue-color);
+      background-color: $blueColor;
       cursor: pointer;
       transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     &:hover .team-icon__link,
     &:focus .team-icon__link {
-      fill: var(--white-color);
+      fill: $whiteColor;
       cursor: pointer;
       transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
   &__link {
-    fill: var(--active-icon);
+    fill: $activeIcon;
     width: 20px;
     height: 20px;
   }
