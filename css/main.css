@@ -1203,7 +1203,7 @@ img {
 }
 .modal-accept__square {
   width: 16px;
-  height: 15px;
+  height: 16px;
   position: relative;
   border: 2px solid var(--strong-text-color);
   border-radius: 3px;
@@ -1229,9 +1229,9 @@ img {
 }
 .modal-accept__icon {
   border-radius: 3px;
-  width: 17px;
-  height: 17px;
-  padding: 4px;
+  width: 16px;
+  height: 16px;
+  padding: 2px;
   z-index: 102;
   top: 50%;
   left: 50%;
