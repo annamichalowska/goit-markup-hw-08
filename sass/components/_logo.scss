@@ -5,12 +5,15 @@
   font-weight: 700;
   line-height: 1.19;
   letter-spacing: 0.03em;
+ 
   &__part {
     color: $blueColor;
   }
+
   &--header {
     color: $blackColor;
   }
+  
   &--footer {
     color: $whiteColor;
   }
