@@ -3,11 +3,11 @@
   text-align: center;
   background-color: $footerBackgroundColor;
   padding: 60px 0;
-  
+
   &__items {
     display: block;
     text-align: center;
-    
+
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       display: flex;
       flex-wrap: wrap;
@@ -42,14 +42,14 @@
     &__email:focus,
     &__phone:hover,
     &__phone:focus {
-      color: $bluekColor;
+      color: $blueColor;
       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
 
   &-sections {
     padding-top: 60px;
-    
+
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       padding-top: 0;
     }
@@ -77,7 +77,7 @@
       font-size: 16px;
       letter-spacing: 0.03em;
       color: white;
-      
+
       @media screen and (min-width: 768px) {
         width: auto;
         padding-right: 250px;
@@ -90,7 +90,7 @@
     &__form {
       display: block;
       justify-content: center;
-      
+
       @media screen and (min-width: 1200px) {
         display: flex;
       }
@@ -98,7 +98,7 @@
 
     &--first {
       margin-left: 0;
-      
+
       @media screen and (min-width: 768px) and (max-width: 1199px) {
         padding-top: 5px;
       }
@@ -110,7 +110,7 @@
 
     &--second {
       margin-left: 0;
-      
+
       @media screen and (min-width: 1200px) {
         margin-left: 78px;
         display: inline;
@@ -122,7 +122,7 @@
   &-icons {
     display: flex;
     justify-content: center;
-    
+
     @media screen and (min-width: 1200px) {
       width: 206px;
     }
@@ -143,7 +143,7 @@
       align-items: center;
       border-radius: 50%;
       background-color: $footerBackgroundIcon;
-      
+
       &:hover,
       &:focus {
         background-color: $blueColor;
@@ -169,12 +169,12 @@
     margin-right: auto;
     margin-left: auto;
     margin-top: 20px;
-    
+
     @media screen and (min-width: 1200px) {
       margin-left: 12px;
       margin-top: 0;
     }
-    
+
     &__icon {
       text-align: center;
       fill: $whiteColor;
