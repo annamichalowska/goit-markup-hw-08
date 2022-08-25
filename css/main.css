@@ -150,8 +150,6 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  padding-top: 24px;
-  padding-bottom: 25px;
   border-bottom: 1px solid var(--header-line-color);
 }
 .header-mob {
@@ -270,6 +268,8 @@ img {
   color: var(--strong-text-color);
   text-decoration: none;
   position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .navigation-header__description:first-child {
   margin-left: 0;
@@ -289,7 +289,7 @@ img {
   width: 100%;
   height: 4px;
   border-radius: 2px;
-  top: 48px;
+  bottom: -1px;
 }
 
 .mob-menu {
