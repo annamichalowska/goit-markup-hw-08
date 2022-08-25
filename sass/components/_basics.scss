@@ -2,17 +2,20 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: $mainFont, $secondaryFont, sans-serif;
   color: $blackColor;
   background-color: $whiteColor;
 }
+
 .container {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  
   @media screen and (min-width: 480px) {
     width: 480px;
   }
@@ -23,9 +26,11 @@ body {
     width: 1200px;
   }
 }
+
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
+ 
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -34,45 +39,56 @@ body {
     padding-left: 15px;
     padding-right: 15px;
   }
+
   &--lorem {
     padding-bottom: 0;
+    
     @media screen and (min-width: 1200px) {
       padding-bottom: 94px;
     }
   }
+
   &--profession {
     display: none;
     padding-top: 0;
     padding-bottom: 0;
+    
     @media screen and (min-width: 1200px) {
       display: flex;
     }
   }
+
   &--clients {
     padding-top: 0;
   }
+
   &__title {
     display: none;
     padding-bottom: 30px;
+    
     @media screen and (min-width: 1200px) {
       display: block;
       text-align: center;
       padding-bottom: 50px;
     }
+
     &--team {
       display: flex;
       justify-content: center;
       padding-top: 60px;
+      
       @media screen and (min-width: 1200px) {
         padding-top: 94px;
       }
     }
+
     &--clients {
       display: flex;
       justify-content: center;
     }
   }
 }
+
 img {
   display: block;
   width: 100%;
