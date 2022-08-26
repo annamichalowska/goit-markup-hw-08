@@ -15,7 +15,7 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  
+
   @media screen and (min-width: 480px) {
     width: 480px;
   }
@@ -30,7 +30,7 @@ body {
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
- 
+
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -42,7 +42,7 @@ body {
 
   &--lorem {
     padding-bottom: 0;
-    
+
     @media screen and (min-width: 1200px) {
       padding-bottom: 94px;
     }
@@ -52,7 +52,7 @@ body {
     display: none;
     padding-top: 0;
     padding-bottom: 0;
-    
+
     @media screen and (min-width: 1200px) {
       display: flex;
     }
@@ -65,7 +65,7 @@ body {
   &__title {
     display: none;
     padding-bottom: 30px;
-    
+
     @media screen and (min-width: 1200px) {
       display: block;
       text-align: center;
@@ -76,7 +76,7 @@ body {
       display: flex;
       justify-content: center;
       padding-top: 60px;
-      
+
       @media screen and (min-width: 1200px) {
         padding-top: 94px;
       }
@@ -93,4 +93,8 @@ img {
   display: block;
   width: 100%;
   height: auto;
+}
+
+*:focus {
+  outline: none;
 }
