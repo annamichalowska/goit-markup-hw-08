@@ -196,16 +196,15 @@
       letter-spacing: 0.02em;
       padding-bottom: 32px;
 
-      &::after {
-        content: "";
-        color: $blueColor;
-      }
-
       &:focus,
       &:hover {
         color: $blueColor;
       }
     }
+  }
+
+  &__active-link {
+    color: $blueColor;
   }
 
   &__address {
