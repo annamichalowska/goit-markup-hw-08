@@ -303,11 +303,10 @@ img {
   letter-spacing: 0.02em;
   padding-bottom: 32px;
 }
-.mob-menu__nav-items::after {
-  content: "";
+.mob-menu__nav-items:focus, .mob-menu__nav-items:hover {
   color: #2196f3;
 }
-.mob-menu__nav-items:focus, .mob-menu__nav-items:hover {
+.mob-menu__active-link {
   color: #2196f3;
 }
 .mob-menu__address {
