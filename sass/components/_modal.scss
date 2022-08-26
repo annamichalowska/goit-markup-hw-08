@@ -195,7 +195,6 @@
       position: relative;
       border: 2px solid $strongTextColor;
       border-radius: 3px;
-      margin-right: 8px;
 
       &:hover,
       &:focus {
@@ -234,10 +233,12 @@
     }
 
     &__text {
+      width: 100%;
       font-size: 14px;
       line-height: 1.17143;
       letter-spacing: 0.03em;
       color: $mailPhoneColor;
+      margin-left: 8px;
 
       & a {
         color: $blueColor;
