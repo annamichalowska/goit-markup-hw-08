@@ -1219,7 +1219,6 @@ img {
   position: relative;
   border: 2px solid #212121;
   border-radius: 3px;
-  margin-right: 8px;
 }
 .modal-accept__square:hover, .modal-accept__square:focus {
   border-color: #2196f3;
@@ -1252,10 +1251,12 @@ img {
   position: absolute;
 }
 .modal-accept__text {
+  width: 100%;
   font-size: 14px;
   line-height: 1.17143;
   letter-spacing: 0.03em;
   color: #757575;
+  margin-left: 8px;
 }
 .modal-accept__text a {
   color: #2196f3;
