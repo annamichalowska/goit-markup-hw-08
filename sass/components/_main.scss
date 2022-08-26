@@ -329,15 +329,13 @@
     align-items: center;
     border-radius: 50%;
 
-    &:hover,
-    &:focus {
+    &:hover {
       background-color: $blueColor;
       cursor: pointer;
       transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    &:hover .team-icon__link,
-    &:focus .team-icon__link {
+    &:hover .team-icon__link {
       fill: $whiteColor;
       cursor: pointer;
       transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -348,5 +346,18 @@
     fill: $activeIcon;
     width: 20px;
     height: 20px;
+
+    &:focus {
+      background-color: $blueColor;
+      fill: $whiteColor;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
   }
 }
